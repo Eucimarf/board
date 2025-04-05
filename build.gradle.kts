@@ -17,6 +17,12 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.34")
 }
 
+// Definir a versão do Java
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
 tasks.test {
     useJUnitPlatform()
 }
